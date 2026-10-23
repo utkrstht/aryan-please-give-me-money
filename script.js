@@ -1,6 +1,6 @@
 const dlg=document.getElementById('dlg');
 const msgs=[
- "Hello!! I am Aryan.<br>I request good boba.<br>If u have boba pls give me.",
+ "Hello!! we are nia and kaboom.<br>We request good boba.<br>If u have boba pls give us.",
  "Wow u clicked again!!<br>That means u care.<br>Boba?? 🥺",
  "I will do a little dance<br>if u buy me boba.<br>It is a bad dance.",
  "OK final offer:<br>1 boba = 1 friend.<br>Terms and conditions apply."
@@ -28,7 +28,7 @@ function beg(){
 }
 function yes(){
   dlg.close();
-  alert("YAYYY!! 🧋🎉 Aryan is crying happy tears. He will now drink this boba in 4 seconds.");
+  alert("YAYYY!! 🧋🎉 nia and kaboom are crying happy tears. they will now drink this boba in 4 seconds.");
 }
 document.addEventListener('mousemove',e=>{
   const s=document.createElement('div');
