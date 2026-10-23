@@ -6,6 +6,17 @@ const msgs=[
  "OK final offer:<br>1 boba = 1 friend.<br>Terms and conditions apply."
 ];
 let i=0, n=362686, pct=3;
+function applyTheme(dark){
+  document.body.classList.toggle('dark',dark);
+  document.getElementById('themeBtn').textContent=dark?'light mode':'dark mode';
+}
+function toggleTheme(){
+  const dark=!document.body.classList.contains('dark');
+  applyTheme(dark);
+  localStorage.setItem('theme',dark?'dark':'light');
+}
+const savedTheme=localStorage.getItem('theme');
+if(savedTheme)applyTheme(savedTheme==='dark');
 function beg(){
   document.getElementById('dm').innerHTML=msgs[i++%msgs.length];
   dlg.showModal();

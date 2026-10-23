@@ -1,5 +1,6 @@
-:root{--bg:#ffb3e6;--ink:#000}
+:root{--bg:#ffb3e6;--ink:#000;--grad:linear-gradient(135deg,#ffb3e6,#b3f0ff,#fff3a0);--box-bg:#ffffcc;--surface:#fff}
 @media (prefers-color-scheme: dark){:root{--bg:#ffb3e6;--ink:#000}}
+body.dark{--bg:#1a0b2e;--ink:#f5d0ff;--grad:linear-gradient(135deg,#1a0b2e,#0b1a2e,#2e2a0b);--box-bg:#2d1b40;--surface:#1f1233}
 *{box-sizing:border-box}
 html,body{margin:0}
 body{
@@ -7,7 +8,7 @@ body{
   color:var(--ink);
   background:
     radial-gradient(circle,#6b3e26 0 6px,transparent 7px) 0 0/40px 40px,
-    linear-gradient(135deg,#ffb3e6,#b3f0ff,#fff3a0);
+    var(--grad);
   cursor:crosshair;
   overflow-x:hidden;
 }
@@ -30,7 +31,7 @@ nav a:hover{background:#ff0;color:#00c}
 h1{font-size:clamp(2.2rem,8vw,5rem);margin:0;line-height:1.05;
   background:linear-gradient(90deg,red,orange,#ee0,green,blue,violet,red);background-size:200% auto;
   -webkit-background-clip:text;background-clip:text;color:transparent;
-  -webkit-text-stroke:2px #000;animation:rb 3s linear infinite}
+  -webkit-text-stroke:2px var(--ink);animation:rb 3s linear infinite}
 @keyframes rb{to{background-position:200% center}}
 .sub{font-size:1.6rem;font-weight:bold;margin:8px 0;text-shadow:2px 2px #fff}
 .boba{font-size:5rem;display:inline-block;animation:bounce 1s infinite alternate}
@@ -38,20 +39,20 @@ h1{font-size:clamp(2.2rem,8vw,5rem);margin:0;line-height:1.05;
 .blink{animation:blink 1s steps(2,start) infinite}
 @keyframes blink{to{visibility:hidden}}
 .wrap{max-width:900px;margin:20px auto;padding:0 14px}
-.box{background:#ffffcc;border:4px ridge #f0f;padding:16px;margin:20px 0;box-shadow:6px 6px 0 #000}
+.box{background:var(--box-bg);border:4px ridge #f0f;padding:16px;margin:20px 0;box-shadow:6px 6px 0 #000}
 .box h2{margin-top:0;background:#00c;color:#ff0;padding:4px 10px;display:inline-block;transform:rotate(-1.5deg)}
 .warn{background:#ff0;border:3px dashed red;padding:10px;font-weight:bold;text-align:center}
 .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
-.menu div{background:#fff;border:3px solid #000;padding:10px;text-align:center}
+.menu div{background:var(--surface);border:3px solid #000;padding:10px;text-align:center}
 .menu div:hover{background:#ffd1f0;transform:rotate(-2deg)}
 .menu .e{font-size:2.5rem}
-.meter{height:30px;border:3px solid #000;background:#fff;margin:8px 0;position:relative}
+.meter{height:30px;border:3px solid #000;background:var(--surface);margin:8px 0;position:relative}
 .meter i{display:block;height:100%;background:repeating-linear-gradient(45deg,#f0a,#f0a 10px,#fa0 10px,#fa0 20px)}
 .meter span{position:absolute;inset:0;text-align:center;line-height:24px;font-weight:bold}
-table{width:100%;border-collapse:collapse;background:#fff}
+table{width:100%;border-collapse:collapse;background:var(--surface)}
 td,th{border:2px solid #000;padding:6px}
 th{background:#0c0;color:#fff}
-.guest{background:#fff;border:2px solid #000;padding:8px;margin:8px 0;text-align:left}
+.guest{background:var(--surface);border:2px solid #000;padding:8px;margin:8px 0;text-align:left}
 .guest small{color:#555}
 footer{background:#000;color:#0f0;text-align:center;padding:20px;font-family:"Courier New",monospace;margin-top:30px;border-top:4px double #0f0}
 .stars{position:fixed;inset:0;pointer-events:none;z-index:99}
