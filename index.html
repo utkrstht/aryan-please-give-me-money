@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>brite give us boba!!!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="banner">
+  we have no boba and no dignity. please buy kaboom and nia GOOD boba. or kabum will get angry
+  <br><a href="#" onclick="beg();return false">SUPPORT ARYAN →</a>
+</div>
+
+<div class="marquee"><span>🔥 NEW!!! 🔥 now with 3% MORE TAPIOCA!! 🧋 *** kaboom has been thirsty for 14 days *** 🔥</span></div>
+
+<div class="counter">TOTAL BOBA BEGGED: &nbsp;<b id="cnt">000000002</b></div>
+
+<nav>
+  <div class="logo">britegiveusboba</div>
+  <a href="#why">why</a>
+  <a href="#menu">menu</a>
+  <a href="#price">pricing</a>
+  <a href="#reviews">reveiws</a>
+  <button class="btn" onclick="beg()">donate Boba!!</button>
+</nav>
+
+<div class="hero">
+  <span class="boba">🧋</span>
+  <h1>Buy us<br>GOOD BOBA<br>For Only Rs. 250!!!</h1>
+  <div class="sub">~*~ <span class="blink">PLEASE</span> ~*~ hum bheek mang rhe hain ~*~</div>
+  <button class="btn pink" style="font-size:1.4rem" onclick="beg()">GIVE BOBA NOW</button>
+  <button class="btn" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">see flavors</button>
+</div>
+
+<div class="wrap">
+
+<div class="box" id="why">
+  <h2>Why Boba??</h2>
+  <p>Hello!! we are <b>kaboom and nia</b>. kaboom has been a good boy. nia has been nothing but kind. we shipped a website. we now request <b>GOOD</b> boba, not the bakwas kind that u fed us.</p>
+</div>
+
+<!--
+<div class="box" id="menu">
+  <h2>acceptable offerings</h2>
+  <div class="menu">
+    <div><div class="e">🍓</div><b>Strawberry Milk Tea</b><br>Ur best option, 10/10</div>
+    <div><div class="e">🥭</div><b>Mango Slush</b><br>mango = love</div>
+    <div><div class="e">🍵</div><b>Taro</b><br>purple = fancy</div>
+    <div><div class="e">🍑</div><b>Brown Sugar</b><br>my love language</div>
+  </div>
+</div>
+-->
+
+
+<div class="box">
+  <h2>boba fund progress</h2>
+  <div class="meter"><i id="bar" style="width:3%"></i><span id="pct">3% of 1 boba</span></div>
+  <p>Goal: <b>1 boba</b>. Raised so far: <b>Rs. 11</b> (found inside victoria university sofa).</p>
+</div>
+
+<div class="box" id="price">
+  <h2>Pricing</h2>
+  <table>
+    <tr><th>Tier</th><th>You Pay</th><th>You Get</th></tr>
+    <tr><td>peasant</td><td>$0.00</td><td>A thank-you (hand-typed)</td></tr>
+    <tr><td>Supporter</td><td><s>$9.99</s> $6.99</td><td>kabum says "wow thx" out loud</td></tr>
+    <tr><td>Legend</td><td>$13.98</td><td>Aryan names his pet rock after u</td></tr>
+  </table>
+</div>
+
+<div class="box" id="reviews">
+  <h2>Reveiws</h2>
+  <div class="guest">⭐⭐⭐⭐⭐ "He begged so hard i cried" <small>- Mom</small></div>
+  <div class="guest">⭐⭐⭐⭐ "Asked for boba 14 times. Would ignore again." <small>- Roommate</small></div>
+  <div class="guest">⭐⭐⭐⭐⭐ "Bought him one and he sent me a thank you card made of tapioca" <small>- Totally Real Person</small></div>
+  <div class="guest">⭐ "Where is my boba" <small>- Aryan, 3 minutes ago</small></div>
+</div>
+
+<div style="text-align:center">
+  <p>🚧 <b>THIS SITE IS BEST VIEWED IN INTERNET EXPLORER 6</b> 🚧</p>
+  <p class="blink">~ sign my guestbook (u wont) ~</p>
+</div>
+
+</div>
+
+<footer>
+  © 2000-2026 Aryan Brite™ &bull; Made with love, HTML, and desperation<br>
+  <small>no boba were harmed in the making of this website (yet)</small>
+</footer>
+
+<div class="chat" onclick="beg()">🤖 BobaBot (online-ish)<em>1</em></div>
+
+<dialog id="dlg">
+  <div class="tb"><span id="dt">Message from Aryan</span><button onclick="dlg.close()">X</button></div>
+  <div class="bd">
+    <p id="dm">Hello!! I am Aryan.<br>I request good boba.<br>If u have boba pls give me.</p>
+    <button class="btn" onclick="dlg.close()">OK</button>
+    <button class="btn pink" onclick="yes()">OK (i will buy him)</button>
+  </div>
+</dialog>
+
+<div class="stars" id="stars"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
